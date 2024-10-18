@@ -58,5 +58,7 @@ namespace WGUInventory.Classes
         {
             PartID = GenerateID.GenerateUniqueID();
         }
+       
+
     }
 }

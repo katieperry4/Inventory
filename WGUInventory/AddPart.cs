@@ -137,6 +137,8 @@ namespace WGUInventory
                     MinText.Text = modifyingPart.Min.ToString();
                     if(modifyingPart is Outsourced outsourcedPart)
                     {
+                        InHouseRadio.Checked = false;
+                        OutsourcedRadio.Checked = true;
                         MachineIDLabel.Visible = false;
                         MachineIDText.Enabled = false;
                         MachineIDText.Visible = false;

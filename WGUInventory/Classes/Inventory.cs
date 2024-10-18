@@ -101,6 +101,12 @@ namespace WGUInventory.Classes
                 {
                     updateInHouse.MachineID = inHousePart.MachineID;
                 }
+                else
+                {
+                    part.PartID = id;
+                    deletePart(partToUpdate);
+                    addPart(part);
+                }
 
             }
         }
